@@ -21,7 +21,7 @@
 - Stratified 85/15 train/val split
 - Label smoothing = 0.08
 
-**Results:** 93.88% validation accuracy. Exported as TorchScript `model.pt` (26MB).
+**Results:** 89.70% validation accuracy. Exported as TorchScript `model.pt` (26MB).
 
 **Core concepts:** Transfer learning, EMA, MixUp, TTA, TorchScript export.
 
@@ -39,7 +39,7 @@
 
 **Evaluation:** Custom `compute_iou()` function computes intersection-over-union on the validation set.
 
-**Results:** Best validation IoU: **0.9736** over 10 epochs.
+**Results:** Best test IoU: **0.9514** over 10 epochs.
 
 **Core concepts:** Semantic segmentation, Dice loss, IoU evaluation, lightweight mobile architecture.
 
@@ -63,6 +63,8 @@ def choose_consensus_point(predictions, weights):
     # Applies edge penalty to suppress predictions near image boundaries
 ```
 
+**Results:** 92.00% accuracy on test set.
+
 **Inference:** Greedy decoding (temperature=None, top_p=None) for deterministic output.
 
 **Core concepts:** Vision-language models, prompt engineering, weighted consensus voting, multi-modal inference.
@@ -85,16 +87,14 @@ Each project is self-contained in its subdirectory. Open the `.ipynb` file in Ju
 
 ## File Structure
 
-```
 dl4cv-projects/
 ├── Project1/
-│   └── Project1.ipynb       # EfficientNet-B1 car classifier
+│   └── Project1.ipynb       # EfficientNet-B1 car classifier (89.70% acc)
 ├── Project2/
-│   └── Project2.ipynb       # LRASPP segmentation (IoU 0.9736)
+│   └── Project2.ipynb       # LRASPP segmentation (IoU 0.9514)
 ├── Project4/
-│   └── project4.ipynb       # Molmo2-4B visual grounding
+│   └── project4.ipynb       # Molmo2-4B visual grounding (92.00% acc)
 └── README.md
-```
 
 ---
 
