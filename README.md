@@ -87,6 +87,7 @@ Each project is self-contained in its subdirectory. Open the `.ipynb` file in Ju
 
 ## File Structure
 
+'''
 dl4cv-projects/
 ├── Project1/
 │   └── Project1.ipynb       # EfficientNet-B1 car classifier (89.70% acc)
@@ -95,6 +96,7 @@ dl4cv-projects/
 ├── Project4/
 │   └── project4.ipynb       # Molmo2-4B visual grounding (92.00% acc)
 └── README.md
+'''
 
 ---
 
