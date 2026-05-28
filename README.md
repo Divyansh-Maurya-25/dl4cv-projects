@@ -100,4 +100,4 @@ dl4cv-projects/
 
 ## Course Context
 
-Projects for **CIS 6930 — Deep Learning for Computer Vision** at the University of South Florida.
+Projects for **CIS 4930 — Deep Learning for Computer Vision** at the University of South Florida.
